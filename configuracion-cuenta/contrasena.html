@@ -3,13 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/miCuenta/custom.css">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>    
-    
     <link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--Bootstrap-->
@@ -17,6 +10,7 @@
     
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
     <title>Document</title>
 </head>
 <body class="bg-dark">
@@ -28,13 +22,16 @@
                 <img src="/assets/imgs/ChatGPT Image 29 ago 2025, 20_49_53.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                 Level-UP Gamer
             </a>
+
+            <!--Botón Diseño Responsivo-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link" href="#">
                             Inicio
                         </a>
                     </li>
@@ -59,8 +56,36 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="navi-item m-1">
+
+                <!--Usuario-->
+                <ul class="navbar-nav ms-auto text-white">
+                    <li class="nav-item me-3">
+                            <a href="#" class="btn btn-primary" role="button">
+                                <i class="bi bi-cart4"></i>
+                            </a>
+                        </li>
+                    <li class="nav-item dropdown me-3">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i>
+                            David
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                            <li>
+                                <a href="/configuracion-cuenta/configuracion-mi-perfil.html" class="dropdown-item">
+                                    <i class="bi bi-person-fill"></i>
+                                    Configuración
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    Cerrar Sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item m-1">
                         <a href="#" class="btn btn-primary" role="button">
                             <i class="bi bi-cart4"></i>
                         </a>
@@ -74,7 +99,7 @@
                         <a href="#" class="btn btn-primary" role="button">
                             Registrarse
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>

@@ -107,86 +107,114 @@
         </nav>
     </div>    
     
-    <secton class="roboto-mi-fuente text-white" id="configuracion_cuenta">
-        <div class="container">
-            <h2>
-                Configuraciones de la Cuenta
-            </h2>
+    <section class="roboto-mi-fuente text-white" id="carrito_compras">
+      <div class="container">
+        <h2>
+          Carrito de Compras
+        </h2>
+        <div class="row">
+          <div class="col-md-8">
 
-            <div class="row">
-                
-                <!--Sección Izquierda Barra de Navegación-->
+            <!--Primer Item-->
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0 align-items-center">
                 <div class="col-md-4">
-                    <div class="list-group">
-                        <a href="/configuracion-cuenta/configuracion-mi-perfil.html" class="bg-dark text-white list-group-item list-group-item-action">
-                            Mi Perfil
-                        </a>
-                        <a href="/configuracion-cuenta/contrasena.html" class="bg-dark text-white list-group-item list-group-item-action">
-                            Contraseña
-                        </a>
-                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">
-                            Métodos de Pago
-                        </a>
-                    </div>
+                  <img src="/assets/imgs/productos/pc-gamer.png" class="img-fluid rounded-start" alt="PC Gamer ASUS ROG Strix">
                 </div>
-
-                <!--Sección Derecha Datos Personales-->
-                <div class="col-md-8">
-                    <div class="container border border-secondary-subtle border-1 rounded">
-                        <h2>
-                            Datos Personales
-                        </h2>
-                        <div class="row">
-                            <div class="col-md-4">
-                                Nombres
-                            </div>
-                            <div class="col-md-8">
-                                David Alejandro
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                Apellidos
-                            </div>
-                            <div class="col-md-8">
-                                Ramírez Luna
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                Alias
-                            </div>
-                            <div class="col-md-4">
-                                David
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                Fecha de Nacimiento
-                            </div>
-                            <div class="col-md-8">
-                                01 / 01 / 2025
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                Correo Electrónico
-                            </div>
-                            <div class="col-md-8">
-                                davidrrluna@gmail.com
-                            </div>
-                        </div>
-                        <div class="my-3">
-                            <a class="btn btn-primary" href="/configuracion-cuenta/configuracion-editar-info.html" role="button">
-                                <i class="bi bi-pencil-square"></i>
-                                Editar
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">PC Gamer ASUS ROG Strix</h5>
+                    <h5 class="card-text">$1.299.990 CLP</h5>
+                    <input type="number" class="form-control" value="1" min="1">
+                  </div>
                 </div>
+                <div class="col-md-2">
+                  <button class="btn btn-danger ms-4">
+                    <i class="bi bi-trash3-fill text-white"></i>
+                  </button>
+                </div>
+              </div>
             </div>
+
+            <!--Segundo Item-->
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-4">
+                  <img src="/assets/imgs/productos/ps5.jpg" class="img-fluid rounded-start" alt="PlayStation 5">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">PlayStation 5</h5>
+                    <h5 class="card-text">$549.990 CLP</h5>
+                    <input type="number" class="form-control" value="1" min="1">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-danger ms-4">
+                    <i class="bi bi-trash3-fill text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!--Tercer Item-->
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-4">
+                  <img src="/assets/imgs/productos/control-xbox.jpg" class="img-fluid rounded-start" alt="Controlador Inalámbrico Xbox Series X">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Controlador Inalámbrico Xbox Series X</h5>
+                    <h5 class="card-text">$59.990 CLP</h5>
+                    <input type="number" class="form-control" value="1" min="1">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-danger ms-4">
+                    <i class="bi bi-trash3-fill text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!--Resumen-->
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                Resumen
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h5>
+                      Total
+                    </h5>
+                  </div>
+                  <div class="col">
+                    $1.909.970 CLP
+                  </div>
+                </div>
+                <div class="my-3">
+                  <button class="btn btn-primary">
+                    Ir a Pagar
+                  </button>
+                </div>
+                <div class="my-3">
+                  <button class="btn btn-secondary">
+                    Seguir Comprando
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </secton>
+      </div>
+    </section>  
 
     <!--Bootstrap JS & Popper-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
