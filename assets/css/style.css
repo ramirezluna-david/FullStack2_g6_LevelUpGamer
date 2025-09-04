@@ -17,6 +17,11 @@ img{
     border-radius: 10px;
 }
 
+.main-container{
+    margin: 20px;
+}
+
+
 
 /* Estilo general del navbar */
 .logo{
@@ -105,6 +110,7 @@ img{
     justify-content: space-between;
     flex-direction: column;
 }
+
 .lista_categorias{
     display: flex;
     gap: 210px;
@@ -177,4 +183,85 @@ img{
 }
 .newsletter form{
     margin-left: 10px;
+}
+
+@media (max-width: 1220px){
+    .main-image{
+        width: 100%;
+        height: auto;
+    }
+    .lista_categorias{
+        gap: 60px;
+    }
+    .lista_prod_destacados{
+        gap: 40px;
+    }
+}
+@media (max-width: 900px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 10px;
+    }
+    .navbar-left{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .search-bar{
+        margin-left: 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .lista_categorias,
+    .lista_prod_destacados{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .categorias img,
+    .prod_destacados img{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        padding: 10px;
+    }
+    .main-image{
+        width: 100%;
+        height: auto;
+    }
+    .lista_categorias,
+    .lista_prod_destacados{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .categorias img,
+    .prod_destacados img{
+        width: 90px;
+        height: 90px;
+    }
+    .newsletter{
+        margin-top: 40px;
+    }
+    .etiquetas{
+        margin-top: 40px
+    }
+    .lista_etiquetas{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .redes_sociales{
+        margin-top: 20px;
+    }
 }
