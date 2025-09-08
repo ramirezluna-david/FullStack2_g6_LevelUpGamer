@@ -20,7 +20,7 @@ form.addEventListener("submit", function(evento){
     
         // Validar campos vacios
         if (email === "" || user === "" || password === "" || password2 === ""){
-            error.textContent = "Error: Debe llenar todos los campos!";
+            error.textContent = "Error: Debe llenar todos los campos!.";
             error.style.display = "block"
             valido = false;
         }else{
@@ -45,7 +45,7 @@ form.addEventListener("submit", function(evento){
 
 
         if(!regex.test(email)){
-            error3.textContent = "Error correo invalido";
+            error3.textContent = "Error: correo invalido.";
             error3.style.display = "block"
             valido = false;
         }else{
