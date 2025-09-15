@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+
+    <!--Navbar-->
+    <div>
+        <nav id="mi_barra_navegacion" class="navbar navbar-dark navbar-expand-lg orbitron-mi-fuente">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/imgs/ChatGPT Image 29 ago 2025, 20_49_53.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Level-UP Gamer
+                </a>
+
+                <!--Botón Diseño Responsivo-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                Categorías de Productos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                                <li class="m-3">
+                                    Todas las Categorías
+                                </li>
+                                <li class="m-2">
+                                    <i class="bi bi-dice-6"></i>
+                                    Juegos de Mesa
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="m-2">
+                                    <i class="bi bi-controller"></i>
+                                    Accesorios
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="m-2">
+                                    <i class="bi bi-playstation"></i>
+                                    Consolas
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="m-2">
+                                    <i class="bi bi-pc-display"></i>
+                                    Computadores
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="m-2">
+                                    <i class="bi bi-dpad"></i>
+                                    Sillas Gamers
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="m-2">
+                                    <i class="bi bi-mouse3-fill"></i>
+                                    Mouse
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="m-2">
+                                    <i class="bi bi-mouse3"></i>
+                                    Mousepads
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="m-2">
+                                    Poleras y Polerones
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Contacto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Comunidad
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--Usuario-->
+                    <ul class="navbar-nav ms-auto text-white">
+                        <li class="nav-item me-3">
+                            <a href="#" class="btn btn-primary" role="button">
+                                <i class="bi bi-cart4"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i>
+                                David
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                                <li>
+                                    <a href="/configuracion-cuenta/configuracion-mi-perfil.html" class="dropdown-item">
+                                        <i class="bi bi-person-fill"></i>
+                                        Configuración
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        <i class="bi bi-box-arrow-right"></i>
+                                        Cerrar Sesión
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item m-1">
+                            <a href="#" class="btn btn-primary" role="button">
+                                <i class="bi bi-cart4"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="#" class="btn btn-primary" role="button">
+                                Iniciar Sesión
+                            </a>
+                        </li>
+                        <li href="" class="nav-item my-1">
+                            <a href="#" class="btn btn-primary" role="button">
+                                Registrarse
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <input type="text"class="form-control" placeholder="Buscar productos...">
+            </div>
+            <div class="col-md-6">
+                <select id="categoryFilter" class="form-select">
+                    <option value="todos">Todas las categorías</option>
+                    <option value="juegos">Juegos de Mesa</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="consolas">Consolas</option>
+                    <option value="computadores">Computadores Gamers</option>
+                    <option value="sillas">Sillas Gamers</option>
+                    <option value="mouse">Mouse</option>
+                    <option value="mousepad">Mousepad</option>
+                    <option value="poleras">Poleras Personalizadas</option>
+                    <option value="polerones">Polerones Gamers</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/imgs/productos/catan.png" alt="" class="img-fluid">
+                        <h5 class="card-title">Catán</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Juegos de Mesa</h6>
+                        <h6>
+                            $29.990 CLP
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/imgs/productos/carcassonne.jpg" alt="" class="img-fluid">
+                        <h5 class="card-title">Carcassonne</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Juegos de Mesa</h6>
+                        <h5>
+                            $24.990 CLP
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/imgs/productos/control-xbox.jpg" alt="" class="img-fluid">
+                        <h5 class="card-title">Controlador Inalámbrico Xbox Series X</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Accesorios</h6>
+                        <h5>
+                            $59.990 CLP
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/imgs/productos/auriculares-gamer.jpg" alt="" class="img-fluid">
+                        <h5 class="card-title">Auriculares Gamer HyperX Cloud II</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Accesorios</h6>
+                        <h6>
+                            $79.990 CLP
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/imgs/productos/ps5.jpg" alt="" class="img-fluid">
+                        <h5 class="card-title">PlayStation 5 </h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Consolas</h6>
+                        <h5>
+                            $549.990 CLP
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/imgs/productos/pc-gamer.png" alt="" class="img-fluid">
+                        <h5 class="card-title">PC Gamer ASUS ROG Strix</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Computadores Gamers</h6>
+                        <h5>
+                            $1.299.990 CLP 
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/imgs/productos/auriculares-gamer.jpg" alt="" class="img-fluid">
+                        <h5 class="card-title">Silla Gamer Secretlab Titan </h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Sillas Gamers</h6>
+                        <h5>
+                            $349.990 CLP 
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Bootstrap JS & Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
