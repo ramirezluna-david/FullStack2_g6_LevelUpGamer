@@ -13,10 +13,10 @@ form.addEventListener("submit", function(evento){
     let password = document.getElementById("password").value.trim();
     let password2 = document.getElementById("password2").value.trim();
     let mayor18 = document.getElementById("mayor").checked;
-
     let valido = true; // bandera para sabe si todo va bien
 
         //Reglas de negocio
+        
     
         // Validar campos vacios
         if (email === "" || user === "" || password === "" || password2 === ""){
@@ -67,11 +67,27 @@ form.addEventListener("submit", function(evento){
 
     if(valido){
         alert("Registro completado")
+        window.location.href = "index2.html";
         form.reset();
     }
+
     }
 });
-
+const form_promo = document.getElementById("form-promo")
+const mensaje_promo = document.getElementById("mensaje_promo")
+form_promo.addEventListener("submit", function(evento){
+    evento.preventDefault();
+    const codigo = document.getElementById("codigo_promo").value.trim();
+    if(codigo === ""){
+        mensaje_promo.textContent = "Error: Debe ingresar un código promocional.";
+    }else if (codigo === "LEVELUP20"){
+        mensaje_promo.textContent = "Código aplicado! Has conseguido 350 puntos Level-Up";
+        mensaje_promo.style.color = "green";
+    }else{
+        mensaje_promo.textContent = "Código inválido. Inténtalo de nuevo.";
+        mensaje_promo.style.color = "red";
+    }
+})
 
 
 
