@@ -7,3 +7,12 @@
 .orbitron-mi-fuente {
     font-family: "Orbitron", sans-serif;
 }
+
+.btn-custom-verde {
+    background-color: #39FF14 !important;
+    border-color: #39FF14 !important;
+}
+
+.mi-custom-color-verde {
+    color:#39FF14 !important;
+}
