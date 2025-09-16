@@ -9,7 +9,14 @@ form.addEventListener("submit", function(evento){
 
     let valido = true; // bandera para sabe si todo va bien
 
-        //Reglas de negocio
+        // validaciones
+
+        //si es administrador
+        if (es_admin(user, password)){
+            alert("BIenvenido administrador " + user + "!");
+            window.location.href = "assets/admin/admin.html";
+            return;
+        }
     
         // Validar campos vacios
         if (user === "" || password === ""){
