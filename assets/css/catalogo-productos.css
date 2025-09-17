@@ -31,9 +31,9 @@
 }
 
 .seccion-top-detalles {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('../img/imgHero4.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('/assets/imgs/bg/fazly-shah-Ei5d39YRrgY-unsplash.jpg') no-repeat center center;
     background-size: cover;
-    padding: 4rem 0;
-    margin-bottom: 3rem;
+    padding: 7rem 0;
+    /* margin-bottom: 7rem; */
 }

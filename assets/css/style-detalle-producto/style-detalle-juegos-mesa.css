@@ -31,9 +31,9 @@
 }
 
 .seccion-top-detalles {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('../img/imgHero4.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('/assets/imgs/bg/fox-hyde-KpUl4nl6aWE-unsplash.jpg') no-repeat center center;
     background-size: cover;
-    padding: 4rem 0;
+    padding: 3rem 0;
     margin-bottom: 3rem;
 }
