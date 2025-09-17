@@ -17,7 +17,7 @@
 
     <!--Navbar-->
     <div>
-        <nav id="mi_barra_navegacion" class="fs-4 navbar navbar-dark navbar-expand-lg orbitron-mi-fuente">
+        <nav id="mi_barra_navegacion" class="navbar navbar-dark navbar-expand-lg orbitron-mi-fuente">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/imgs/ChatGPT Image 29 ago 2025, 20_49_53.png" alt="Logo" width="90" height="84" class="d-inline-block align-text-top">
@@ -30,56 +30,56 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-white" href="#">
                                 LEVEL-UP GAMER
                             </a>
                         </li>
                         <li class="nav-item mx-1">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-white" href="#">
                                 Inicio
                             </a>
                         </li>
                         <li class="nav-item dropdown mx-1">
-                            <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                            <a class="nav-link dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
                                 Categorías de Productos
                             </a>
-                            <ul class="fs-4 dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                            <ul class="text-white dropdown-menu dropdown-menu-dark dropdown-menu-end">
                                 <li class="mx-3">
                                     Todas las Categorías
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="mx-3">
-                                    <i class="bi bi-dice-6"></i>
+                                    <i class="bi bi-dice-6 mi-custom-color-verde"></i>
                                     Juegos de Mesa
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="mx-3">
-                                    <i class="bi bi-controller"></i>
+                                    <i class="bi bi-controller mi-custom-color-verde"></i>
                                     Accesorios
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="mx-3">
-                                    <i class="bi bi-playstation"></i>
+                                    <i class="bi bi-playstation mi-custom-color-verde"></i>
                                     Consolas
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="mx-3">
-                                    <i class="bi bi-pc-display"></i>
+                                    <i class="bi bi-pc-display mi-custom-color-verde"></i>
                                     Computadores
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="mx-3">
-                                    <i class="bi bi-dpad"></i>
+                                    <i class="bi bi-dpad mi-custom-color-verde"></i>
                                     Sillas Gamers
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="mx-3">
-                                    <i class="bi bi-mouse3-fill"></i>
+                                    <i class="bi bi-mouse3-fill mi-custom-color-verde"></i>
                                     Mouse
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="mx-3">
-                                    <i class="bi bi-mouse3"></i>
+                                    <i class="bi bi-mouse3 mi-custom-color-verde"></i>
                                     Mousepads
                                 </li>
                                 <li class="dropdown-divider"></li>
@@ -89,17 +89,17 @@
                             </ul>
                         </li>
                         <li class="nav-item mx-1">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-white" href="#">
                                 Contacto
                             </a>
                         </li>
                         <li class="nav-item mx-1">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-white" href="#">
                                 Blog
                             </a>
                         </li>
                         <li class="nav-item mx-1">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-white" href="#">
                                 Comunidad
                             </a>
                         </li>
@@ -108,17 +108,17 @@
                     <!--Usuario-->
                     <ul class="navbar-nav ms-auto text-white">
                         <li class="nav-item me-3">
-                            <a href="#" class="btn-lg btn btn-primary" role="button">
+                            <a href="#" class="btn btn-primary" role="button">
                                 <i class="bi bi-cart4"></i>
                                 Carrito de Compras
                             </a>
                         </li>
                         <li class="nav-item dropdown me-3">
-                            <button class="btn-lg btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-person-circle"></i>
                                 David
                             </button>
-                            <ul class="fs-4 dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
                                 <li>
                                     <a href="/html/user-view/configuracion-cuenta/configuracion-mi-perfil.html" class="dropdown-item">
                                         <i class="bi bi-person-fill"></i>
@@ -155,142 +155,186 @@
         </nav>
     </div>
 
-    <div class="container">
-        <div class="d-flex justify-content-center m-5">
-            <h1 class="text-white my-5">
-                Catálogo de Productos
-            </h1>
+    <section class="roboto-mi-fuente text-white">
+        <div class="container">
+            <div class="d-flex justify-content-center m-5">
+                <h1 class="text-white my-5">
+                    Catálogo de Productos
+                </h1>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <input type="text"class="form-control" placeholder="Buscar productos...">
+                </div>
+                <div class="col-md-6">
+                    <select id="categoryFilter" class=" form-select">
+                        <option value="todos">Todas las categorías</option>
+                        <option value="juegos">Juegos de Mesa</option>
+                        <option value="accesorios">Accesorios</option>
+                        <option value="consolas">Consolas</option>
+                        <option value="computadores">Computadores Gamers</option>
+                        <option value="sillas">Sillas Gamers</option>
+                        <option value="mouse">Mouse</option>
+                        <option value="mousepad">Mousepad</option>
+                        <option value="poleras">Poleras Personalizadas</option>
+                        <option value="polerones">Polerones Gamers</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card text-center custom-border-color border-5">
+                        <div class="card-header">Juegos de Mesa</div>
+                        <div class="card-body">
+                            <img src="#" alt="" class="img-fluid">
+                            <h5 class="card-title">Catán</h5>
+                            <div class="card-footer border border-primary border-1">
+                                <h5>
+                                    $29.990 CLP
+                                </h5>
+                            </div>
+                            <div class="mx-auto mt-3">
+                                <button class="btn btn-custom-verde">
+                                    <i class="bi bi-cart4"></i>
+                                    Agregar al Carro
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center custom-border-color border-5">
+                        <div class="card-header">Juegos de Mesa</div>
+                        <div class="card-body">
+                            <img src="#" alt="" class="img-fluid">
+                            <h5 class="card-title">Carcassonne</h5>
+                            <div class="card-footer border border-primary border-1">
+                                <h5>
+                                    $24.990 CLP
+                                </h5>
+                            </div>
+                            <div class="mx-auto mt-3">
+                                <button class="btn btn-custom-verde">
+                                    <i class="bi bi-cart4"></i>
+                                    Agregar al Carro
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center custom-border-color border-5">
+                        <div class="card-header">Accesorios</div>
+                        <div class="card-body">
+                            <img src="#" alt="" class="img-fluid">
+                            <h5 class="card-title">Controlador Inalámbrico Xbox Series X</h5>
+                            <div class="card-footer border border-primary border-1">
+                                <h5>
+                                    $59.990 CLP
+                                </h5>
+                            </div>
+                            <div class="mx-auto mt-3">
+                                <button class="btn btn-custom-verde">
+                                    <i class="bi bi-cart4"></i>
+                                    Agregar al Carro
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center custom-border-color border-5">
+                        <div class="card-header">Accesorios</div>
+                        <div class="card-body">
+                            <img src="#" alt="" class="img-fluid">
+                            <h5 class="card-title">Auriculares Gamer HyperX Cloud II</h5>
+                            <div class="card-footer border border-primary border-1">
+                                <h5>
+                                    $79.990 CLP
+                                </h5>
+                            </div>
+                            <div class="mx-auto mt-3">
+                                <button class="btn btn-custom-verde">
+                                    <i class="bi bi-cart4"></i>
+                                    Agregar al Carro
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center custom-border-color border-5">
+                        <div class="card-header">Consolas</div>
+                        <div class="card-body">
+                            <img src="#" alt="" class="img-fluid">
+                            <h5 class="card-title">PlayStation 5 </h5>
+                            <div class="card-footer border border-primary border-1">
+                                <h5>
+                                    $549.990 CLP
+                                </h5>
+                            </div>
+                            <div class="mx-auto mt-3">
+                                <button class="btn btn-custom-verde">
+                                    <i class="bi bi-cart4"></i>
+                                    Agregar al Carro
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center custom-border-color border-5">
+                        <div class="card-header">Computadores Gamers</div>
+                        <div class="card-body">
+                            <img src="#" alt="" class="img-fluid">
+                            <h5 class="card-title">PC Gamer ASUS ROG Strix</h5>
+                            <div class="card-footer border border-primary border-1">
+                                <h5>
+                                    $1.299.990 CLP 
+                                </h5>
+                            </div>
+                            <div class="mx-auto mt-3">
+                                <button class="btn btn-custom-verde">
+                                    <i class="bi bi-cart4"></i>
+                                    Agregar al Carro
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center custom-border-color border-5">
+                        <div class="card-header">Sillas Gamers</div>
+                        <div class="card-body">
+                            <img src="#" alt="" class="img-fluid">
+                            <h5 class="card-title">
+                                Silla Gamer Secretlab Titan
+                            </h5>
+                            <div class="card-footer border border-primary border-1">
+                                <h5>
+                                    $349.990 CLP 
+                                </h5>
+                            </div>
+                            <div class="mx-auto mt-3">
+                                <button class="btn btn-custom-verde">
+                                    <i class="bi bi-cart4"></i>
+                                    Agregar al Carro
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="row my-5">
-            <div class="col-md-6">
-                <input type="text"class="form-control" placeholder="Buscar productos...">
-            </div>
-            <div class="col-md-6">
-                <select id="categoryFilter" class=" form-select">
-                    <option value="todos">Todas las categorías</option>
-                    <option value="juegos">Juegos de Mesa</option>
-                    <option value="accesorios">Accesorios</option>
-                    <option value="consolas">Consolas</option>
-                    <option value="computadores">Computadores Gamers</option>
-                    <option value="sillas">Sillas Gamers</option>
-                    <option value="mouse">Mouse</option>
-                    <option value="mousepad">Mousepad</option>
-                    <option value="poleras">Poleras Personalizadas</option>
-                    <option value="polerones">Polerones Gamers</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="row g-3">
-            <div class="col-md-4">
-                <div class="card text-center border border-primary border-5">
-                    <div class="card-header">Juegos de Mesa</div>
-                    <div class="card-body">
-                        <img src="#" alt="" class="img-fluid">
-                        <h5 class="card-title">Catán</h5>
-                        <div class="card-footer border border-primary border-1">
-                            <h5>
-                                $29.990 CLP
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card text-center border border-primary border-5">
-                    <div class="card-header">Juegos de Mesa</div>
-                    <div class="card-body">
-                        <img src="#" alt="" class="img-fluid">
-                        <h5 class="card-title">Carcassonne</h5>
-                        <div class="card-footer border border-primary border-1">
-                            <h5>
-                                $24.990 CLP
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card text-center border border-primary border-5">
-                    <div class="card-header">Accesorios</div>
-                    <div class="card-body">
-                        <img src="#" alt="" class="img-fluid">
-                        <h5 class="card-title">Controlador Inalámbrico Xbox Series X</h5>
-                        <div class="card-footer border border-primary border-1">
-                            <h5>
-                                $59.990 CLP
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card text-center border border-primary border-5">
-                    <div class="card-header">Accesorios</div>
-                    <div class="card-body">
-                        <img src="#" alt="" class="img-fluid">
-                        <h5 class="card-title">Auriculares Gamer HyperX Cloud II</h5>
-                        <div class="card-footer border border-primary border-1">
-                            <h5>
-                                $79.990 CLP
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card text-center border border-primary border-5">
-                    <div class="card-header">Consolas</div>
-                    <div class="card-body">
-                        <img src="#" alt="" class="img-fluid">
-                        <h5 class="card-title">PlayStation 5 </h5>
-                        <div class="card-footer border border-primary border-1">
-                            <h5>
-                                $549.990 CLP
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card text-center border border-primary border-5">
-                    <div class="card-header">Computadores Gamers</div>
-                    <div class="card-body">
-                        <img src="#" alt="" class="img-fluid">
-                        <h5 class="card-title">PC Gamer ASUS ROG Strix</h5>
-                        <div class="card-footer border border-primary border-1">
-                            <h5>
-                                $1.299.990 CLP 
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card text-center border border-primary border-5">
-                    <div class="card-header">Sillas Gamers</div>
-                    <div class="card-body">
-                        <img src="#" alt="" class="img-fluid">
-                        <h5 class="card-title">
-                            Silla Gamer Secretlab Titan
-                        </h5>
-                        <div class="card-footer border border-primary border-1">
-                            <h5>
-                                $349.990 CLP 
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    </section>
 
     <!--Bootstrap JS & Popper-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

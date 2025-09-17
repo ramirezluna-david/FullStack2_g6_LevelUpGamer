@@ -16,3 +16,12 @@
 .mi-custom-color-verde {
     color:#39FF14 !important;
 }
+
+.custom-border-color {
+    border-color: #39FF14 !important;
+}
+
+.btn-custom-azul {
+    background-color: #1E90FF !important;
+    border-color: #1E90FF !important;
+}
