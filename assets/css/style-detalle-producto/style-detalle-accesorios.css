@@ -37,3 +37,29 @@
     padding: 3rem 0;
     margin-bottom: 3rem;
 }
+
+/* Compactar tarjetas en productos destacados */
+.producto-card {
+  padding: 0.5rem; /* menos espacio interno */
+  font-size: 0.9rem; /* texto más pequeño */
+}
+
+.producto-card img {
+  max-height: 120px; /* limitar altura imágenes */
+  object-fit: contain;
+}
+
+.producto-card .card-title {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.producto-card .card-footer h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.producto-card button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+}

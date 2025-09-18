@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/custom.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/index.css">
 
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-    <!--Bootstrap Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    
-    <title>Document</title>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <title>Level-Up Gamer | Landing</title>
 </head>
-<body class="bg-dark">
+<body class="bg-dark text-white roboto-mi-fuente">
 
-    <!--Navbar-->
+  <!--Navbar-->
     <div>
         <nav id="mi_barra_navegacion" class="navbar navbar-dark navbar-expand-lg orbitron-mi-fuente">
             <div class="container-fluid">
@@ -43,7 +43,7 @@
                             <a class="nav-link dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
                                 Categorías de Productos
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-white">
+                            <ul class="text-white dropdown-menu dropdown-menu-dark dropdown-menu-end">
                                 <li class="mx-3">
                                     Todas las Categorías
                                 </li>
@@ -153,60 +153,143 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </div>   
 
-    <secton class="roboto-mi-fuente text-white" id="configuracion_cuenta">
-        <div class="container">
-            <h2 class="my-5">
-                Configuraciones de la Cuenta
-            </h2>
-            <div class="row">
-
-                <!--Sección Izquierda Barra de Navegación-->
-                <div class="col-md-4">
-                    <div class="list-group">
-                        <a href="/html/user-view/configuracion-cuenta/configuracion-mi-perfil.html" class="bg-dark text-white list-group-item list-group-item-action">
-                            Mi Perfil
-                        </a>
-                        <a href="/html/user-view/configuracion-cuenta/contrasena.html" class="bg-dark text-white list-group-item list-group-item-action">
-                            Contraseña
-                        </a>
-                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">
-                            Métodos de Pago
-                        </a>
-                    </div>
-                </div>
-
-                <!--Sección Derecha Contraseña-->
-                <div class="col-md-8">
-                    <h2>
-                        Contraseña
-                    </h2>
-                    <form name="editar-contrasena-usuario">
-                        <label for="contrasenia-actual" class="form-label">
-                            Contraseña Actual
-                        </label>
-                        <input placeholder="Contraseña Actual" type="password" id="contrasenia-actual" class="form-control" required>
-                        <label for="nueva-contrasenia" class="form-label">
-                            Nueva Contraseña
-                        </label>
-                        <input placeholder="Nueva Contraseña" type="password" id="nueva-contrasenia" class="form-control" required>
-                        <label for="confirmar-contrasenia" class="form-label">
-                            Contraseña Actual
-                        </label>
-                        <input placeholder="Confirmar Contraseña" type="password" id="confirmar-contrasenia" class="form-control" required>
-                        <div class="my-3">
-                            <button type="submit" class="btn-lg btn btn-primary">
-                                Guardar
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!--1. Carrusel-->
+  <section>
+    <div id="carouselLanding" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/imgs/bg/ella-don-LJpbF2GmSx4-unsplash.jpg" class="carousel-img d-block w-100" alt="banner1">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="orbitron-mi-fuente">Bienvenido a Level-Up Gamer</h2>
+            <p>Encuentra lo último en consolas, accesorios y más.</p>
+          </div>
         </div>
-    </secton>
+        <div class="carousel-item">
+          <img src="/assets/imgs/bg/mateo-nCU4yq5xDEQ-unsplash.jpg" class="carousel-img d-block w-100" alt="banner2">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="orbitron-mi-fuente">Promociones Exclusivas</h2>
+            <p>Ofertas especiales para miembros registrados.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/imgs/bg/resul-kaya-xxL1FavYOh0-unsplash.jpg" class="carousel-img d-block w-100" alt="banner3">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="orbitron-mi-fuente">Comunidad Gamer</h2>
+            <p>Comparte, aprende y crece junto a otros gamers.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselLanding" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselLanding" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
 
-    <!--Footer-->
+  <!--2. Categorías destacadas-->
+  <section class="container my-5">
+    <h3 class="mb-4">Categorías Destacadas</h3>
+    <div class="row g-4 text-center">
+      <div class="col-md-3">
+        <div class="card h-100 bg-dark border-light text-light">
+          <div class="card-body">
+          <img src="/assets/imgs/productos/PlayStation 5/w=1500,h=1500,fit=pad.webp" class="custom-img d-block w-100" alt="banner2">
+            <i class="bi bi-controller fs-1 mi-custom-color-verde"></i>
+            <h5 class="mt-3">Consolas</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 bg-dark border-light text-light">
+          <div class="card-body">
+          <img src="/assets/imgs/productos/Auriculares/w=1500,h=1500,fit=pad.webp" class="custom-img d-block w-100" alt="banner2">
+            <i class="bi bi-headset fs-1 mi-custom-color-verde"></i>
+            <h5 class="mt-3">Accesorios</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 bg-dark border-light text-light">
+          <div class="card-body">
+          <img src="/assets/imgs/productos/PC Gamer/w=1500,h=1500,fit=pad_pc.webp" class="custom-img d-block w-100" alt="banner2">
+            <i class="bi bi-pc-display fs-1 mi-custom-color-verde"></i>
+            <h5 class="mt-3">Computadores</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 bg-dark border-light text-light">
+          <div class="card-body">
+          <img src="/assets/imgs/productos/Catan/w=1500,h=1500,fit=pad_catan.webp" class="custom-img d-block w-100" alt="banner2">
+            <i class="bi bi-dice-6 fs-1 mi-custom-color-verde"></i>
+            <h5 class="mt-3">Juegos de Mesa</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--3. Productos más vendidos-->
+  <section class="container my-5">
+    <h3 class="mb-4">Productos Más Vendidos</h3>
+    <div class="row g-4 text-center">
+      <div class="col-md-3">
+        <div class="card bg-dark border-light text-light">
+          <div class="card-body">
+          <img src="/assets/imgs/productos/Catan/catan.webp" class="card-img-top" alt="Catán">
+            <h5 class="card-title">Catán</h5>
+            <p>$29.990</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-dark border-light text-light">
+          <div class="card-body">
+          <img src="/assets/imgs/productos/PlayStation 5/play5.webp" class="card-img-top" alt="PS5">
+            <h5 class="card-title">PlayStation 5</h5>
+            <p>$549.990</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-dark border-light text-light">
+          <div class="card-body">
+          <img src="/assets/imgs/productos/Mouse/mouse.webp" class="card-img-top" alt="Mouse">
+            <h5 class="card-title">Mouse Logitech G502</h5>
+            <p>$49.990</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-dark border-light text-light">
+          <div class="card-body">
+          <img src="/assets/imgs/productos/Silla/41UZRUxHa4L._AC_SL1000__square.png" class="card-img-top" alt="Silla Gamer">
+            <h5 class="card-title">Silla Secretlab Titan</h5>
+            <p>$349.990</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--4. Sección Comunidad y Contacto-->
+  <section class="container my-5 text-center">
+    <h3>¿Quieres ser parte de nuestra comunidad?</h3>
+    <p>
+      <a href="#comunidad" class="btn btn-custom-verde me-3">
+        <i class="bi bi-people-fill"></i> Ir a Comunidad
+      </a>
+      <a href="#contacto" class="btn btn-primary">
+        <i class="bi bi-envelope-fill"></i> Ir a Contacto
+      </a>
+    </p>
+  </section>
+
+  <!--Footer-->
     <footer class="bg-dark text-white pt-5 pb-3 mt-5 border-top border-secondary roboto-mi-fuente">
       <div class="container">
         <div class="row text-center text-md-start">
@@ -258,8 +341,7 @@
       </div>
     </footer>
 
-    <!--Bootstrap JS & Popper-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

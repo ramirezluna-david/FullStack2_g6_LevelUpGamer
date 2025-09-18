@@ -151,6 +151,7 @@
                         </li> -->
                     </ul>
                 </div>
+                </div>
             </div>
         </nav>
     </div>
@@ -166,50 +167,71 @@
     </section>
 
     <section class="roboto-mi-fuente text-white">
-        <div class="container">
-            
-            <div class="row my-5">
-                <div class="col-md-6">
-                    <input type="text"class="form-control" placeholder="Buscar productos...">
+  <div class="container">
+    <div class="row my-5">
+      
+      <!--Columna de filtros-->
+      <div class="col-md-3">
+        <div class="card bg-dark text-white custom-border-color border-3 p-3">
+          <h4 class="text-center mb-3">Filtro Avanzado</h4>
+
+          <!--Buscar productos-->
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Buscar productos...">
+          </div>
+
+          <!--Categorías-->
+          <div class="mb-3">
+            <label for="categoryFilter" class="form-label">Categorías</label>
+            <select id="categoryFilter" class="form-select">
+              <option value="todos">Todas las categorías</option>
+              <option value="juegos">Juegos de Mesa</option>
+              <option value="accesorios">Accesorios</option>
+              <option value="consolas">Consolas</option>
+              <option value="computadores">Computadores Gamers</option>
+              <option value="sillas">Sillas Gamers</option>
+              <option value="mouse">Mouse</option>
+              <option value="mousepad">Mousepad</option>
+              <option value="poleras">Poleras y Polerones</option>
+            </select>
+          </div>
+
+          <!--Rango de Precios-->
+          <!-- <div class="mb-3">
+            <label for="priceRange" class="form-label">Rango de Precios</label>
+            <input type="range" class="form-range" min="0" max="1500000" step="5000" id="priceRange">
+          </div> -->
+
+          <!--Botón aplicar-->
+          <button class="btn btn-custom-verde w-100">
+            <i class="bi bi-funnel-fill"></i> Aplicar Filtros
+          </button>
+        </div>
+      </div>
+
+      <!--Columna catálogo-->
+      <div class="col-md-9">
+        <div class="row g-4">
+          
+          <div class="col-md-4">
+            <div class="card h-100 text-center custom-border-color border-3 text-white bg-dark">
+              <div class="card-header text-white-50">Juegos de Mesa</div>
+              <div class="card-body">
+                <img src="/assets/imgs/productos/Catan/D_NQ_NP_848189-MLA84841643141_052025-O_square.png" alt="" class="img-fluid">
+                <h5 class="my-3 card-title">Catán</h5>
+                <div class="card-footer border border-white border-1">
+                  <h5>$29.990 CLP</h5>
                 </div>
-                <div class="col-md-6">
-                    <select id="categoryFilter" class=" form-select">
-                        <option value="todos">Todas las categorías</option>
-                        <option value="juegos">Juegos de Mesa</option>
-                        <option value="accesorios">Accesorios</option>
-                        <option value="consolas">Consolas</option>
-                        <option value="computadores">Computadores Gamers</option>
-                        <option value="sillas">Sillas Gamers</option>
-                        <option value="mouse">Mouse</option>
-                        <option value="mousepad">Mousepad</option>
-                        <option value="poleras">Poleras y Polerones Personalizados</option>
-                    </select>
+                <div class="mx-auto mt-3">
+                  <button class="btn btn-custom-verde">
+                    <i class="bi bi-cart4"></i> Agregar al Carro
+                  </button>
                 </div>
+              </div>
             </div>
+          </div>
 
-            <div class="row g-5">
-                <div class="col-md-3">
-                    <div class="h-100 card text-center custom-border-color border-3 text-white bg-dark">
-                        <div class="card-header text-white-50">Juegos de Mesa</div>
-                        <div class="card-body">
-                            <img src="/assets/imgs/productos/Catan/D_NQ_NP_848189-MLA84841643141_052025-O_square.png" alt="" class="img-fluid">
-                            <h5 class="my-3 card-title">Catán</h5>
-                            <div class="card-footer border border-white border-1">
-                                <h5 class="">
-                                    $29.990 CLP
-                                </h5>
-                            </div>
-                            <div class="mx-auto mt-3">
-                                <button class="btn btn-custom-verde">
-                                    <i class="bi bi-cart4"></i>
-                                    Agregar al Carro
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
+          <div class="col-md-4">
                     <div class="h-100 card text-center custom-border-color border-3 text-white bg-dark">
                         <div class="card-header text-white-50">Juegos de Mesa</div>
                         <div class="card-body">
@@ -230,7 +252,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card text-center custom-border-color border-3 text-white bg-dark">
                         <div class="card-header text-white-50">Accesorios</div>
                         <div class="card-body">
@@ -251,7 +273,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card text-center custom-border-color border-3 text-white bg-dark">
                         <div class="card-header text-white-50">Accesorios</div>
                         <div class="card-body">
@@ -272,7 +294,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="h-100 card text-center custom-border-color border-3 text-white bg-dark">
                         <div class="card-header text-white-50">Consolas</div>
                         <div class="card-body">
@@ -293,7 +315,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card text-center custom-border-color border-3 text-white bg-dark">
                         <div class="card-header text-white-50">Computadores Gamers</div>
                         <div class="card-body">
@@ -314,7 +336,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card text-center custom-border-color border-3 text-white bg-dark">
                         <div class="card-header text-white-50">Sillas Gamers</div>
                         <div class="card-body">
@@ -337,7 +359,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card text-center custom-border-color border-3 text-white bg-dark">
                         <div class="card-header text-white-50">Mouse</div>
                         <div class="card-body">
@@ -360,7 +382,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card text-center custom-border-color border-3 text-white bg-dark">
                         <div class="card-header text-white-50">Mousepad</div>
                         <div class="card-body">
@@ -383,7 +405,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="text-white bg-dark card text-center custom-border-color border-3">
                         <div class="card-header text-white-50">Poleras y Polerones</div>
                         <div class="card-body">
@@ -406,7 +428,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="text-white bg-dark card text-center custom-border-color border-3">
                         <div class="card-header text-white-50">Poleras y Polerones</div>
                         <div class="card-body">
@@ -430,9 +452,63 @@
                 </div>
 
             </div>
+        </div>
 
         </div>
+    </div>
     </section>
+
+    <!--Footer-->
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5 border-top border-secondary roboto-mi-fuente">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          
+          <!--Columna 1: Logo + Redes Sociales-->
+          <div class="col-md-4 mb-4">
+            <h4 class="mb-3">
+              <i class="bi bi-controller"></i> LEVEL-UP GAMER
+            </h4>
+            <div>
+              <a href="https://facebook.com" target="_blank" class="text-white me-3 fs-4">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="text-white me-3 fs-4">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="text-white me-3 fs-4">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://tiktok.com" target="_blank" class="text-white fs-4">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--Columna 2: Enlaces Rápidos-->
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Enlaces Rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Categorías de Productos</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Comunidad</a></li>
+            </ul>
+          </div>
+
+          <!--Columna 3: Imagen-->
+          <div class="col-md-4 mb-4 text-center">
+            <h5 class="mb-3">Medios de Pago</h5>
+            <img src="/assets/imgs/401x117.jpg" alt="Medios de Pago" class="img-fluid rounded">
+          </div>
+        </div>
+
+        <!--Copyright-->
+        <div class="text-center mt-4">
+          <p class="mb-0">&copy; 2025 LEVEL-UP GAMER. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
 
     <!--Bootstrap JS & Popper-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

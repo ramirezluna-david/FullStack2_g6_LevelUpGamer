@@ -29,3 +29,14 @@
 .custom-bg-color-electric-blue {
   background-color: #00F0FF !important; /* Example custom color */
 }
+
+.carousel-img {
+  height: 350px;        /* Altura fija de la franja */
+  object-fit: cover;    /* Recorta la imagen para llenar el espacio sin deformarla */
+  object-position: center; /* Centra la parte visible */
+}
+
+.custom-img {
+    object-fit: cover;    /* Recorta la imagen para llenar el espacio sin deformarla */
+    object-position: center; /* Centra la parte visible */
+}
