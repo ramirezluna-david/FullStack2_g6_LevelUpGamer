@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-mi-fuente {
+    font-family: "Roboto", sans-serif;
+}
+
+.orbitron-mi-fuente {
+    font-family: "Orbitron", sans-serif;
+}
+
+.btn-custom-verde {
+    background-color: #39FF14 !important;
+    border-color: #39FF14 !important;
+}
+
+.mi-custom-color-verde {
+    color:#39FF14 !important;
+}
+
+.custom-border-color {
+    border-color: #39FF14 !important;
+}
+
+.btn-custom-azul {
+    background-color: #1E90FF !important;
+    border-color: #1E90FF !important;
+}
+
+.custom-bg-color-electric-blue {
+  background-color: #00F0FF !important; /* Example custom color */
+}
+
+.seccion-top-detalles {
+    background:
+        url('/assets/imgs/bg/resul-kaya-xxL1FavYOh0-unsplash.jpg') no-repeat center center / cover ;
+    /* background-size: cover;
+    padding: 7rem 0;
+    margin-bottom: 3rem; */
+    min-height: 220px;
+}

@@ -8,9 +8,23 @@
     font-family: "Orbitron", sans-serif;
 }
 
+.seccion-top-detalles {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('/assets/imgs/bg/rebekah-yip-wMT0oiL5XjA-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
 .btn-custom-verde {
-    background-color: #39FF14 !important;
+    background-color: #28a745 !important;
+    color: #fff;
+    border: none;
     border-color: #39FF14 !important;
+}
+.btn-custom-verde:hover, .btn-custom-verde:focus {
+    background-color: #218838 !important;
+    color: #fff;
 }
 
 .mi-custom-color-verde {
@@ -28,14 +42,6 @@
 
 .custom-bg-color-electric-blue {
   background-color: #00F0FF !important; /* Example custom color */
-}
-
-.seccion-top-detalles {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('/assets/imgs/bg/rebekah-yip-wMT0oiL5XjA-unsplash.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 3rem 0;
-    margin-bottom: 3rem;
 }
 
 /* Compactar tarjetas en productos destacados */
@@ -62,4 +68,26 @@
 .producto-card button {
   padding: 0.3rem 0.6rem;
   font-size: 0.85rem;
+}
+
+.active-thumbnail {
+    border-width: 3px !important;
+    box-shadow: 0 0 0 2px #0d6efd;
+}
+.producto-card .btn:focus, .producto-card .btn:hover {
+    outline: 2px solid #0d6efd;
+    outline-offset: 2px;
+}
+.breadcrumb a:focus, .breadcrumb a:hover {
+    color: #0d6efd !important;
+    text-decoration: underline !important;
+}
+.card-footer h5 {
+    font-size: 1.1rem;
+}
+.card {
+    background-color: #181818;
+}
+.card-title, .card-header {
+    font-family: 'Orbitron', sans-serif;
 }

@@ -155,16 +155,21 @@
         </nav>
     </div>
 
-    <section class="seccion-top-detalles">
-        <div class="container">
-            <div class="mb-3 mi-custom-color-verde fs-4">
-            <a href="#" class="link mi-custom-color-verde">Inicio</a>
-            <span>/</span>
-            <a href="#" class="link- mi-custom-color-verde">Accesorios</a>
-            <span>/</span>
-            <a href="#" class="link mi-custom-color-verde">Controlador Inalámbrico Xbox Series X</a>
-            </div>
-        </div>
+    <!-- Banner principal estilo catálogo -->
+    <section class="w-100" style="background: url('/assets/imgs/bg/fox-hyde-KpUl4nl6aWE-unsplash.jpg') center center / cover no-repeat; min-height: 180px;">
+    <div class="container h-100 d-flex align-items-center" style="min-height: 180px;">
+        <nav aria-label="breadcrumb" class="w-100">
+        <ol class="breadcrumb bg-transparent mb-0 px-0 py-2">
+            <li class="breadcrumb-item">
+            <a href="#" class="text-white text-decoration-underline fw-semibold">Inicio</a>
+            </li>
+            <li class="breadcrumb-item">
+            <a href="#" class="text-white text-decoration-underline fw-semibold">Juegos de Mesa</a>
+            </li>
+            <li class="breadcrumb-item active text-white fw-bold" aria-current="page">Carcassonne</li>
+        </ol>
+        </nav>
+    </div>
     </section>
 
     <!--Detalles del Producto-->
@@ -509,6 +514,37 @@
             </div>
 
         </div>
+
+        <!-- Formulario para Dejar Reseña (solo usuarios logueados) -->
+        <div class="mt-5 card shadow">
+            <div class="card-body">
+                <h5 class="card-title">Deja tu reseña</h5>
+                <form>
+                    <!-- Campo Calificación -->
+                    <div class="mb-3">
+                        <label class="form-label">Tu calificación:</label>
+                        <select class="form-select" required>
+                            <option value="">Selecciona...</option>
+                            <option value="5">★★★★★ (5)</option>
+                            <option value="4">★★★★☆ (4)</option>
+                            <option value="3">★★★☆☆ (3)</option>
+                            <option value="2">★★☆☆☆ (2)</option>
+                            <option value="1">★☆☆☆☆ (1)</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo Reseña -->
+                    <div class="mb-3">
+                        <label for="reseña" class="form-label">Tu comentario:</label>
+                        <textarea class="form-control" id="reseña" rows="3" placeholder="Escribe tu experiencia..." required></textarea>
+                    </div>
+
+                    <!-- Botón -->
+                    <button type="submit" class="btn btn-primary">Enviar Reseña</button>
+                </form>
+            </div>
+        </div>
+        
     </div>
 
     <!--Footer-->

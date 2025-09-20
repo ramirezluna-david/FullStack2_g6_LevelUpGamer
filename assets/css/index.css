@@ -40,3 +40,8 @@
     object-fit: cover;    /* Recorta la imagen para llenar el espacio sin deformarla */
     object-position: center; /* Centra la parte visible */
 }
+
+.custom-bg {
+    min-height: 350px; 
+    background: url('/assets/imgs/bg/ella-don-LJpbF2GmSx4-unsplash.jpg') center center / cover no-repeat, #181818;
+}
