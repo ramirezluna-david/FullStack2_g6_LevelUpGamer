@@ -1,8 +1,31 @@
-body{
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #000000;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 52%, rgba(51, 51, 51, 1) 100%);
-    list-style: none;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-mi-fuente {
+    font-family: "Roboto", sans-serif;
+}
+
+.orbitron-mi-fuente {
+    font-family: "Orbitron", sans-serif;
+}
+
+.btn-custom-verde {
+    background-color: #39FF14 !important;
+    border-color: #39FF14 !important;
+}
+
+.mi-custom-color-verde {
+    color:#39FF14 !important;
+}
+
+.custom-border-color {
+    border-color: #39FF14 !important;
+}
+
+.btn-custom-azul {
+    background-color: #1E90FF !important;
+    border-color: #1E90FF !important;
+}
+
+.custom-bg-color-electric-blue {
+  background-color: #00F0FF !important; /* Example custom color */
 }

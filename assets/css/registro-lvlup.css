@@ -29,11 +29,3 @@
 .custom-bg-color-electric-blue {
   background-color: #00F0FF !important; /* Example custom color */
 }
-
-.seccion-top-detalles {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('../img/imgHero4.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 4rem 0;
-    margin-bottom: 3rem;
-}

@@ -29,3 +29,12 @@
 .custom-bg-color-electric-blue {
   background-color: #00F0FF !important; /* Example custom color */
 }
+
+.seccion-top-detalles {
+    background:
+        url('/assets/imgs/bg/ella-don-fK5Oomnc-Wk-unsplash.jpg') no-repeat center center / cover ;
+    /* background-size: cover;
+    padding: 7rem 0;
+    margin-bottom: 3rem; */
+    min-height: 220px;
+}
