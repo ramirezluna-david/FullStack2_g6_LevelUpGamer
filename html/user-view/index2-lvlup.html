@@ -127,13 +127,13 @@
 
                     <!--Barra de Búsqueda Global-->
                     <form class="d-flex mx-auto" role="search" style="max-width: 400px;">
-                      <div class="input-group">
-                          <input class="form-control" type="search" placeholder="Buscar productos..." aria-label="Search" id="searchInput">
-                          <button class="btn btn-outline-light" type="submit" id="searchButton">
-                              <i class="bi bi-search"></i>
-                          </button>
-                      </div>
-                  </form>
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Buscar productos..." aria-label="Search" id="searchInput">
+                            <button class="btn btn-outline-light" type="submit" id="searchButton">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
 
                     <!--Usuario-->
                     <ul class="navbar-nav ms-auto text-white">
@@ -143,27 +143,17 @@
                                 Carrito de Compras
                             </a>
                         </li>
-                        <li class="nav-item dropdown me-3">
-                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-person-circle"></i>
-                                David
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-                                <li>
-                                    <a href="/html/user-view/configuracion-cuenta/configuracion-mi-perfil.html" class="dropdown-item">
-                                        <i class="bi bi-person-fill"></i>
-                                        Configuración
-                                    </a>
-                                </li>
-                                <li class="dropdown-divider"></li>
-                                <li>
-                                    <a href="/html/user-view/iniciar-sesion.html" class="dropdown-item">
-                                        <i class="bi bi-box-arrow-right"></i>
-                                        Cerrar Sesión
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                        <li class="nav-item me-3">
+                          <a href="/html/user-view/registro-lvlup.html" class="btn btn-primary" role="button">
+                              Registrarme
+                          </a>
+                      </li>
+                      <li class="nav-item me-3">
+                        <a href="/html/user-view/iniciar-sesion.html" class="btn btn-primary" role="button">
+                          <i class="bi bi-door-open-fill"></i>
+                            Iniciar Sesión
+                        </a>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -433,7 +423,8 @@
       </div>
     </footer>
 
-  <!--Bootstrap JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/search.js"></script>
 </body>
 </html>

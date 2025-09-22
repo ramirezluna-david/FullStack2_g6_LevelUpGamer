@@ -92,7 +92,7 @@ form.addEventListener("submit", function(evento) {
         // Verificar credenciales específicas
         if (correo === "admin@duoc.cl" && password === "admin123") {
             alert("Inicio de sesión exitoso - Bienvenido Administrador");
-            window.location.href = "/html/user-view/index-lvlup.html";
+            window.location.href = "/html/admin/admin.html";
         } else if (correo.endsWith("@duoc.cl") && password === "duoc123") {
             alert("Inicio de sesión exitoso - Bienvenido Usuario DuocUC");
             window.location.href = "/html/user-view/index-lvlup.html";

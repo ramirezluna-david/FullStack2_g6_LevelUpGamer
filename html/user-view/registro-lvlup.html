@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/registro-lvlup.css">
 
   <!--Bootstrap-->
@@ -112,7 +112,7 @@
                             </a>
                         </li>
                         <li class="nav-item mx-1">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="/html/user-view/blog.html">
                                 Blog
                             </a>
                         </li>
@@ -123,6 +123,16 @@
                         </li>
                     </ul>
 
+                    <!--Barra de Búsqueda Global-->
+                    <form class="d-flex mx-auto" role="search" style="max-width: 400px;">
+                      <div class="input-group">
+                          <input class="form-control" type="search" placeholder="Buscar productos..." aria-label="Search" id="searchInput">
+                          <button class="btn btn-outline-light" type="submit" id="searchButton">
+                              <i class="bi bi-search"></i>
+                          </button>
+                      </div>
+                  </form>
+
                     <!--Usuario-->
                     <ul class="navbar-nav ms-auto text-white">
                         <li class="nav-item me-3">
@@ -131,7 +141,18 @@
                                 Carrito de Compras
                             </a>
                         </li>
-                        <li class="nav-item dropdown me-3">
+                        <li class="nav-item me-3">
+                          <a href="/html/user-view/registro-lvlup.html" class="btn btn-primary" role="button">
+                              Registrarme
+                          </a>
+                      </li>
+                      <li class="nav-item me-3">
+                        <a href="/html/user-view/iniciar-sesion.html" class="btn btn-primary" role="button">
+                          <i class="bi bi-door-open-fill"></i>
+                            Iniciar Sesión
+                        </a>
+                    </li>
+                        <!-- <li class="nav-item dropdown me-3">
                             <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-person-circle"></i>
                                 David
@@ -151,7 +172,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -303,7 +324,7 @@
               <li><a href="/html/user-view/index-lvlup.html" class="text-white text-decoration-none">Inicio</a></li>
               <li><a href="/html/user-view/catalogo-productos.html" class="text-white text-decoration-none">Categorías de Productos</a></li>
               <li><a href="/html/user-view/contacto.html" class="text-white text-decoration-none">Contacto</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+              <li><a href="/html/user-view/blog.html" class="text-white text-decoration-none">Blog</a></li>
               <li><a href="#" class="text-white text-decoration-none">Comunidad</a></li>
               <li><a href="/html/user-view/nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
             </ul>
