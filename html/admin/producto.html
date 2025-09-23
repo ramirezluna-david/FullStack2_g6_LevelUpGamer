@@ -31,6 +31,23 @@
         <div class="topbar">
             <h1>Productos</h1>
             <button type="button" class="btn btn-primary"><a href="nuevo_prod.html">Agregar nuevo producto</a></button>
+        <button onclick="temp_edit()" type="button" class="btn btn-warning">Editar producto</button>
+            <div id="plantilla_edit" style="display: none;">
+                <h2>Ingrese el codigo del producto a editar</h2>
+                <input type="" id="camp_edit" placeholder="Ingrese el codigo del producto.">
+                <button onclick="edit_prod()" id="aceptar">Aceptar</button>
+                <button onclick="temp_edit()">Cancelar</button>
+                <p id="mensaje_error" style="color: red;"></p>
+
+            </div>
+            <button onclick="temp_delete()" type="button" class="btn btn-danger">Eliminar producto</button>
+            <div id="plantilla_delete" style="display: none;">
+                <h2>Ingrese el codigo del producto a eliminar.</h2>
+                <input type="" id="camp_delete_prod" placeholder="Ingrese el codigo del producto.">
+                <button onclick="delete_prod()" id="aceptar">Aceptar</button>
+                <button onclick="temp_delete()">Cancelar</button>
+                <p id="mensaje_error" style="color: red;"></p>
+            </div>
             <i class="bi bi-bell-fill"></i>
         </div>
         <hr>
@@ -70,6 +87,8 @@
          tabla.appendChild(fila);
         });
     </script>
+    <script src="/assets/js/edit_prod.js"></script>
+    <script src="/assets/js/delete_prod.js"></script>
     </div>
 </body>
 </html>

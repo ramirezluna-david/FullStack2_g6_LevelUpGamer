@@ -1,21 +1,20 @@
-function temp_delete(){
-    var plantilla = document.getElementById("plantilla_delete");
+function temp_edit(){
+    var plantilla = document.getElementById("plantilla_edit");
     if(plantilla.style.display === "none" || plantilla.style.display === ""){
         plantilla.style.display = "block";
     } else{
         plantilla.style.display = "none";
     }
 }
-
 //Eliminar usuario
-function delete_user(){
-    const camp_delete = document.getElementById("camp_delete");
+function edit_user(){
+    const camp_edit = document.getElementById("camp_edit");
     const accept = document.getElementById("aceptar");
     const error = document.getElementById("mensaje_error");
 
-    const rut_eliminar = camp_delete.value.trim();
+    const rut_edit = camp_edit.value.trim();
     
-    if (camp_delete.value.trim() === ""){
+    if (camp_edit.value.trim() === ""){
         error.innerText = "Error: Debe ingresar el RUT del usuario"
         error.style.display = "block"
         return;
@@ -25,24 +24,14 @@ function delete_user(){
 
     let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    const index = usuarios.findIndex(u => u.rut === rut_eliminar);
+    const usuario = usuarios.find(u => u.rut === rut_edit);
 
-    if (index === -1){
+        if (!usuario){
         error.innerText = "Error usuario no encontrado con ese RUT.";
         error.style.display = "block";
         return;
     }
+    localStorage.setItem("usuario_edit", rut_edit);
 
-    //eliminar usuario
-    usuarios.splice(index, 1);
-
-    //guardar nuevamente en localstorage
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
-    alert("Usuario eliminado correctamente!!!.");
-
-    //recargar la pagina para actualizar la tabla
-
-    window.location.reload()
-
+    window.location.href = "edit_user.html";
 }

@@ -31,8 +31,16 @@
         <div class="topbar">
             <h1>Usuarios</h1>
             <button type="button" class="btn btn-primary"><a href="new_user.html">Agregar nuevo usuario</a></button>
-            <button type="button" class="btn btn-warning">Editar usuario</button>
-            <button onclick="temp_delete()"type="button" class="btn btn-danger">Eliminar usuario</button>
+            <button onclick="temp_edit()" type="button" class="btn btn-warning">Editar usuario</button>
+            <div id="plantilla_edit" style="display: none;">
+                <h2>Ingrese el RUT del usuario a editar</h2>
+                <input type="" id="camp_edit" placeholder="Ingrese el RUT del usuario.">
+                <button onclick="edit_user()" id="aceptar">Aceptar</button>
+                <button onclick="temp_edit()">Cancelar</button>
+                <p id="mensaje_error" style="color: red;"></p>
+
+            </div>
+            <button onclick="temp_delete()" type="button" class="btn btn-danger">Eliminar usuario</button>
             <div id="plantilla_delete" style="display: none;">
                 <h2>Ingrese el RUT del usuario a eliminar.</h2>
                 <input type="" id="camp_delete" placeholder="Ingrese el RUT del usuario.">
@@ -85,5 +93,6 @@
     </script>
     </div>
     <script src="/assets/js/delete_user.js"></script>
+    <script src="/assets/js/edit_user.js"></script>
 </body>
 </html>

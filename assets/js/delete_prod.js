@@ -7,39 +7,39 @@ function temp_delete(){
     }
 }
 
-//Eliminar usuario
-function delete_user(){
-    const camp_delete = document.getElementById("camp_delete");
+//Eliminar producto
+function delete_prod(){
+    const camp_delete = document.getElementById("camp_delete_prod");
     const accept = document.getElementById("aceptar");
     const error = document.getElementById("mensaje_error");
 
-    const rut_eliminar = camp_delete.value.trim();
+    const prod_eliminar = camp_delete.value.trim();
     
     if (camp_delete.value.trim() === ""){
-        error.innerText = "Error: Debe ingresar el RUT del usuario"
-        error.style.display = "block"
+        error.innerText = "Error: Debe ingresar el codigo del producto";
+        error.style.display = "block";
         return;
     }else{
         error.style.display = "none";
     }
 
-    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    let productos = JSON.parse(localStorage.getItem("productos")) || [];
 
-    const index = usuarios.findIndex(u => u.rut === rut_eliminar);
+    const index = productos.findIndex(p => p.product === prod_eliminar);
 
     if (index === -1){
-        error.innerText = "Error usuario no encontrado con ese RUT.";
+        error.innerText = "Error producto no encontrado con ese codigo.";
         error.style.display = "block";
         return;
     }
 
     //eliminar usuario
-    usuarios.splice(index, 1);
+    productos.splice(index, 1);
 
     //guardar nuevamente en localstorage
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    localStorage.setItem("productos", JSON.stringify(productos));
 
-    alert("Usuario eliminado correctamente!!!.");
+    alert("Producto eliminado correctamente!!!.");
 
     //recargar la pagina para actualizar la tabla
 
