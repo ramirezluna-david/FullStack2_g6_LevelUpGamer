@@ -138,9 +138,12 @@
                     <!--Usuario-->
                     <ul class="navbar-nav ms-auto text-white">
                         <li class="nav-item me-3">
-                            <a href="../html/carrito.html" class="btn btn-primary" role="button">
+                            <a href="../html/carrito.html" class="btn btn-primary position-relative" role="button">
                                 <i class="bi bi-cart4"></i>
                                 Carrito de Compras
+                                <span id="carrito-indicador" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;">
+                                    0
+                                </span>
                             </a>
                         </li>
                         <li class="nav-item dropdown me-3">
@@ -241,7 +244,11 @@
             <h5>$29.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="catan"
+              data-nombre="Catán"
+              data-precio="29990"
+              data-imagen="../assets/imgs/productos/Catan/D_NQ_NP_848189-MLA84841643141_052025-O_square.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -263,7 +270,11 @@
             <h5>$24.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="carcassonne"
+              data-nombre="Carcassonne"
+              data-precio="24990"
+              data-imagen="../assets/imgs/productos/Carc/D_NQ_NP_880148-MLC89039698461_072025-O-juego-de-mesa-carcassonne-2015_square.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -285,7 +296,11 @@
             <h5>$59.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="xbox-controller"
+              data-nombre="Controlador Xbox Series X"
+              data-precio="59990"
+              data-imagen="../assets/imgs/productos/Control/D_NQ_NP_2X_932200-MLA54147001786_032023-F_square.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -307,7 +322,11 @@
             <h5>$79.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="hyperx-cloud-ii"
+              data-nombre="Auriculares Gamer HyperX Cloud II"
+              data-precio="79990"
+              data-imagen="../assets/imgs/productos/Auriculares/D_NQ_NP_2X_931349-MCO53148372002_012023-F_square.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -329,7 +348,11 @@
             <h5>$549.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="ps5"
+              data-nombre="PlayStation 5"
+              data-precio="549990"
+              data-imagen="../assets/imgs/productos/PlayStation 5/ps5_square.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -351,7 +374,11 @@
             <h5>$1.299.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="pc-asus-rog"
+              data-nombre="PC Gamer ASUS ROG Strix"
+              data-precio="1299990"
+              data-imagen="../assets/imgs/productos/PC Gamer/h7325_square.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -373,7 +400,11 @@
             <h5>$349.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="silla-secretlab"
+              data-nombre="Silla Gamer Secretlab Titan"
+              data-precio="349990"
+              data-imagen="../assets/imgs/productos/Silla/41UZRUxHa4L._AC_SL1000__square.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -395,7 +426,11 @@
             <h5>$49.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="logitech-g502"
+              data-nombre="Mouse Gamer Logitech G502 HERO"
+              data-precio="49990"
+              data-imagen="../assets/imgs/productos/Mouse/61mpMH5TzkL._AC_SL1500__square.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -417,7 +452,11 @@
             <h5>$29.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="mousepad-pro"
+              data-nombre="Mousepad Gaming Profesional"
+              data-precio="29990"
+              data-imagen="../assets/imgs/productos/MousePad/D_NQ_NP_2X_858567-MLA84853038101_052025-F_square.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -439,7 +478,11 @@
             <h5>$14.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="polera-levelup"
+              data-nombre="Polera Gamer Personalizada 'Level-Up'"
+              data-precio="14990"
+              data-imagen="../assets/imgs/productos/Polera/polera_azul.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -461,7 +504,11 @@
             <h5>$14.990 CLP</h5>
           </div>
           <div class="mx-auto mt-3">
-            <button class="btn btn-custom-verde">
+            <button class="btn btn-custom-verde agregar-carrito"
+              data-id="poleron-levelup"
+              data-nombre="Poleron Gamer Personalizado 'Level-Up'"
+              data-precio="14990"
+              data-imagen="../assets/imgs/productos/Poleron/poleron_verde.png">
               <i class="bi bi-cart4"></i> Agregar al Carro
             </button>
           </div>
@@ -532,5 +579,22 @@
 <!--Bootstrap JS & Popper-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="../assets/js/carrito.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const botonesAgregar = document.querySelectorAll('.agregar-carrito');
+        botonesAgregar.forEach(boton => {
+            boton.addEventListener('click', () => {
+                const producto = {
+                    id: boton.dataset.id,
+                    nombre: boton.dataset.nombre,
+                    precio: parseInt(boton.dataset.precio),
+                    imagen: boton.dataset.imagen
+                };
+                window.agregarAlCarrito(producto);
+            });
+        });
+    });
+</script>
 </body>
 </html>

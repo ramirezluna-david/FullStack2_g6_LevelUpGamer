@@ -138,9 +138,12 @@
                     <!--Usuario-->
                     <ul class="navbar-nav ms-auto text-white">
                         <li class="nav-item me-3">
-                            <a href="../html/carrito.html" class="btn btn-primary" role="button">
+                            <a href="../html/carrito.html" class="btn btn-primary position-relative" role="button">
                                 <i class="bi bi-cart4"></i>
                                 Carrito de Compras
+                                <span id="carrito-indicador" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;">
+                                    0
+                                </span>
                             </a>
                         </li>
                         <li class="nav-item dropdown me-3">
@@ -184,103 +187,27 @@
     <section class="roboto-mi-fuente text-white" id="carrito_compras">
       <div class="container my-3">
         <div class="border-3 border border-primary rounded p-4 row">
-          <div class="col-md-8">
-
-            <!--Primer Item-->
-            <div class="card mb-3 border border-primary border-3" style="max-width: 540px;">
-              <div class="row g-0 align-items-center">
-                <div class="col-md-4">
-                  <img src="../assets/imgs/productos/PC Gamer/h7321_square.png" class="img-fluid rounded-start" alt="PC Gamer ASUS ROG Strix">
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <h5 class="card-title">PC Gamer ASUS ROG Strix</h5>
-                    <h5 class="card-text">$1.299.990 CLP</h5>
-                    <input type="number" class="form-control" value="1" min="1">
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-danger ms-4">
-                    <i class="bi bi-trash3-fill text-white"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!--Segundo Item-->
-
-            <div class="card mb-3 border border-primary border-3" style="max-width: 540px;">
-              <div class="row g-0 align-items-center">
-                <div class="col-md-4">
-                  <img src="../assets/imgs/productos/PlayStation 5/ps5_square.png" class="img-fluid rounded-start" alt="PlayStation 5">
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <h5 class="card-title">PlayStation 5</h5>
-                    <h5 class="card-text">$549.990 CLP</h5>
-                    <input type="number" class="form-control" value="1" min="1">
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-danger ms-4">
-                    <i class="bi bi-trash3-fill text-white"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!--Tercer Item-->
-            <div class="card mb-3 border border-primary border-3" style="max-width: 540px;">
-              <div class="row g-0 align-items-center">
-                <div class="col-md-4">
-                  <img src="../assets/imgs/productos/Control/D_NQ_NP_2X_833944-MLU74874725016_032024-F_square.png" class="img-fluid rounded-start" alt="Controlador Inalámbrico Xbox Series X">
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <h5 class="card-title">Controlador Inalámbrico Xbox Series X</h5>
-                    <h5 class="card-text">$59.990 CLP</h5>
-                    <input type="number" class="form-control" value="1" min="1">
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-danger ms-4">
-                    <i class="bi bi-trash3-fill text-white"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
+          <div class="col-12">
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Total</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody id="carrito-body">
+                <!-- Los productos del carrito se insertarán aquí dinámicamente -->
+              </tbody>
+            </table>
           </div>
 
           <!--Resumen-->
-          <div class="col-4">
-            <div class="card border border-primary border-3">
-              <div class="card-header">
-                Resumen
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5>
-                      Total
-                    </h5>
-                  </div>
-                  <div class="col">
-                    $1.909.970 CLP
-                  </div>
-                </div>
-                <div class="my-3">
-                  <button class="btn btn-primary">
-                    Ir a Pagar
-                  </button>
-                </div>
-                <div class="my-3">
-                  <button class="btn btn-secondary">
-                    Seguir Comprando
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div class="col-12 col-md-4 ms-auto" id="carrito-resumen">
+            <!-- El resumen del carrito se insertará aquí dinámicamente -->
           </div>
 
         </div>
@@ -342,5 +269,6 @@
     <!--Bootstrap JS & Popper-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="../assets/js/carrito.js"></script>
 </body>
 </html>

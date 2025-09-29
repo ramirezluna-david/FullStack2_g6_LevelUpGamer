@@ -138,9 +138,12 @@
                     <!--Usuario-->
                     <ul class="navbar-nav ms-auto text-white">
                         <li class="nav-item me-3">
-                            <a href="../html/carrito.html" class="btn btn-primary" role="button">
+                            <a href="../html/carrito.html" class="btn btn-primary position-relative" role="button">
                                 <i class="bi bi-cart4"></i>
                                 Carrito de Compras
+                                <span id="carrito-indicador" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;">
+                                    0
+                                </span>
                             </a>
                         </li>
                         <li class="nav-item dropdown me-3">
@@ -249,7 +252,11 @@
                     personalización.
                 </p>
                 <div class="mx-auto d-grid col-6 m-5">
-                    <button class="btn btn-primary btn-lg">
+                    <button class="btn btn-primary btn-lg agregar-carrito"
+                        data-id="logitech-g502"
+                        data-nombre="Mouse Gamer Logitech G502 HERO"
+                        data-precio="49990"
+                        data-imagen="../assets/imgs/productos/Mouse/61mpMH5TzkL._AC_SL1500__square.png">
                         Añadir al Carrito
                     </button>
                     <button class="my-3 btn btn-custom-verde btn-lg">
@@ -674,5 +681,22 @@
     <!--Bootstrap JS & Popper-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="../assets/js/carrito.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const botonesAgregar = document.querySelectorAll('.agregar-carrito');
+            botonesAgregar.forEach(boton => {
+                boton.addEventListener('click', () => {
+                    const producto = {
+                        id: boton.dataset.id,
+                        nombre: boton.dataset.nombre,
+                        precio: parseInt(boton.dataset.precio),
+                        imagen: boton.dataset.imagen
+                    };
+                    window.agregarAlCarrito(producto);
+                });
+            });
+        });
+    </script>
 </body>
 </html>

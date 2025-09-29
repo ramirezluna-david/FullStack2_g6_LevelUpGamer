@@ -138,9 +138,12 @@
                     <!--Usuario-->
                     <ul class="navbar-nav ms-auto text-white">
                         <li class="nav-item me-3">
-                            <a href="../html/carrito.html" class="btn btn-primary" role="button">
+                            <a href="../html/carrito.html" class="btn btn-primary position-relative" role="button">
                                 <i class="bi bi-cart4"></i>
                                 Carrito de Compras
+                                <span id="carrito-indicador" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;">
+                                    0
+                                </span>
                             </a>
                         </li>
                         <li class="nav-item dropdown me-3">
@@ -246,7 +249,11 @@
                     movimiento del mouse.
                 </p>
                 <div class="mx-auto d-grid col-6 m-5">
-                    <button class="btn btn-primary btn-lg">
+                    <button class="btn btn-primary btn-lg agregar-carrito"
+                            data-id="razer-goliathus"
+                            data-nombre="Mousepad Razer Goliathus Extended Chroma"
+                            data-precio="29990"
+                            data-imagen="../assets/imgs/productos/MousePad/D_NQ_NP_2X_858567-MLA84853038101_052025-F_square.png">
                         Añadir al Carrito
                     </button>
                     <button class="my-3 btn btn-custom-verde btn-lg">
@@ -315,7 +322,7 @@
                                     <a href="../html/detalle-carcassone.html" class="text-decoration-none">
                                         <img src="../assets/imgs/productos/Carc/D_NQ_NP_880148-MLC89039698461_072025-O-juego-de-mesa-carcassonne-2015_square.png" alt="Carcassonne" class="img-fluid">
                                     </a>
-                                    <a href="../html/detalle-carcassone.html" class="text-decoration-none text-white">
+                                    <a href="../html/detalle-carcassonne.html" class="text-decoration-none text-white">
                                         <h5 class="my-3 card-title">Carcassonne</h5>
                                     </a>
                                     <div class="card-footer border border-white border-1">
@@ -665,6 +672,23 @@
 
     <!--Bootstrap JS & Popper-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></script>
+    <script src="../assets/js/carrito.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const botonesAgregar = document.querySelectorAll('.agregar-carrito');
+            botonesAgregar.forEach(boton => {
+                boton.addEventListener('click', (e) => {
+                    const producto = {
+                        id: e.target.dataset.id,
+                        nombre: e.target.dataset.nombre,
+                        precio: parseFloat(e.target.dataset.precio),
+                        imagen: e.target.dataset.imagen
+                    };
+                    window.agregarAlCarrito(producto);
+                });
+            });
+        });
+    </script>
 </body>
-<../html>
+</html>
