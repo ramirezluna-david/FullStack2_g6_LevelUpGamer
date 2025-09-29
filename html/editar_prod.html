@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+      <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/new_product.css">
+</head>
+<body>
+    <!--Perfil del administrador-->
+    <div class="sidebar">
+        <h2>Level-Up Gamer (Administrator)</h2>
+        <ul class="menu">
+            <li><a href="../html/producto.html"> <i class="bi bi-bag-check"></i>Productos</a></li>
+            <li><a href="../html/usuario.html"><i class="bi bi-people"></i>Usuario</a></li>
+        </ul>
+
+        <ul class="menu bottom-menu">
+            <li><a href="../html/admin.html">Inicio</a></li>
+            <li><a href="">Configuración</a></li>
+            <li><a href="">Ayuda</a></li>
+            <li><a href="">Perfil</a></li>
+            <li><a href="">Cerrar Sesión</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="topbar">
+            <h1>Agregar nuevo producto en la tienda</h1>
+            <i class="bi bi-bell-fill"></i>
+        </div>
+            <form id="form_editar_producto" novalidate>
+            <label for="product">Codigo del producto*</label>
+            <input type="product" id="product" placeholder="Ingrese el codigo del producto" required>
+
+            <label for="nombre_producto">Nombre del producto*</label>
+            <input type="nombre_producto" id="nombre_producto" placeholder="Ingrese el nombre del producto" required>
+
+            <label for="descripcion">Descripcion (opcional)</label>
+            <input type="descripcion" id="descripcion" placeholder="Ingrese la descripción del producto">
+
+            <label for="precio">Precio*</label>
+            <input type="number" id="precio" name="precio" placeholder="Ingrese el precio del producto" min="0" step="1" required>
+
+            <label for="stock">Stock*</label>
+            <input type="number" id="stock" placeholder="Ingrese la cantidad del producto" name="stock" step="1" min="0" required>
+            
+            <label for="critical_stock">Stock Critico</label>
+            <input type="number" id="critical_stock" name="critical_stock" placeholder="Stock critico" step="1" min="0">
+
+            <label for="categoria">Categoria</label>
+            <select type="categoria" id="categoria" name="categoria" placeholder="Ingrese la categoria del producto" required>
+                <option value="">-- Seleccione una categoría --</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="consolas">Consolas</option>
+                <option value="computadores">Computadores</option>
+                <option value="sillas">Sillas Gamers</option>
+                <option value="mouse">Mouse</option>
+                <option value="mouesepad">Mousepads</option>
+                <option value="poleras">Poleras y polerones</option>
+            </select>
+
+
+            <label for="imagen_producto">Imagen del producto</label>
+            <input type="file" id="imagen_producto" name="imagen_producto" accept="image/*">
+
+            <button type="submit">Agregar</button>
+            <button id="cancelButton" type="button">Cancelar</button>
+        </form>
+        <p id="mensaje_error" style="color: red;"></p>
+        <p id="mensaje_error2" style="color: red;"></p>
+        <p id="mensaje_error3" style="color: red;"></p>
+        <p id="mensaje_error4" style="color: red;"></p>
+    </div>
+        <script>
+        const prod_edit = localStorage.getItem("producto_edit");
+        let producto = JSON.parse(localStorage.getItem("productos")) || [];
+        const product = producto.find(p => p.product === prod_edit);
+
+        if (product){
+            document.getElementById("product").value = product.product;
+            document.getElementById("nombre_producto").value = product.nombre_producto;
+            document.getElementById("descripcion").value = product.descripcion;
+            document.getElementById("precio").value = product.precio;
+            document.getElementById("stock").value = product.stock;
+            document.getElementById("critical_stock").value = product.critical_stock;
+
+        }
+        document.getElementById("form_editar_producto").addEventListener("submit", function(evento){
+            evento.preventDefault();
+
+            product.product = document.getElementById("product").value;
+            product.nombre_producto =  document.getElementById("nombre_producto").value;
+            product.descripcion = document.getElementById("descripcion").value;
+            product.precio = document.getElementById("precio").value;
+            product.stock = document.getElementById("stock").value;
+            product.critical_stock = document.getElementById("critical_stock").value;
+            //actualizar el localstorage
+            localStorage.setItem("productos", JSON.stringify(producto));
+
+            alert("Producto editado con exito!");
+            window.location.href = "producto.html";
+            
+        });
+
+    </script>
+    <script src="../assets/js/new_prod.js"></script>
+
+</body>
+</html>

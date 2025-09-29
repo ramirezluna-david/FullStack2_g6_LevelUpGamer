@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog Level-Up Gamer - Noticias, tendencias, reseñas y artículos sobre gaming, esports y tecnología. Mantente actualizado con las últimas novedades del mundo gamer.">
+  <meta name="keywords" content="blog gaming, noticias gaming, tendencias gaming chile, esports chile, level up gamer blog, artículos gaming">
+  <link rel="stylesheet" href="../assets/css/blog.css">
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <title>Blog Gaming - Noticias y Tendencias | Level-Up Gamer</title>
+</head>
+<body class="bg-dark text-white roboto-mi-fuente">
+
+  <!--Navbar-->
+    <div>
+        <nav id="mi_barra_navegacion" class="sticky-top navbar navbar-dark navbar-expand-lg orbitron-mi-fuente sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../html/index-lvlup.html">
+                    <img src="../assets/imgs/ChatGPT Image 29 ago 2025, 20_49_53.png" alt="Logo" width="90" height="84" class="d-inline-block align-text-top">
+                </a>
+
+                <!--Botón Diseño Responsivo-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../html/index-lvlup.html">
+                                LEVEL-UP GAMER
+                            </a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link text-white" href="../html/index-lvlup.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown mx-1">
+                            <a class="nav-link dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="../html/catalogo-productos.html">
+                                Categorías de Productos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-white">
+                                <li class="mx-3">
+                                    <a href="../html/catalogo-productos.html" class="dropdown-item">
+                                        Todas las Categorías
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="mx-3">
+                                    <a href="../html/catalogo-productos.html" class="dropdown-item">
+                                        <i class="bi bi-dice-6 mi-custom-color-verde"></i>
+                                        Juegos de Mesa
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="mx-3">
+                                    <a href="../html/catalogo-productos.html" class="dropdown-item">
+                                        <i class="bi bi-controller mi-custom-color-verde"></i>
+                                        Accesorios
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="mx-3">
+                                    <a href="../html/catalogo-productos.html" class="dropdown-item">
+                                        <i class="bi bi-playstation mi-custom-color-verde"></i>
+                                        Consolas
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="mx-3">
+                                    <a href="../html/catalogo-productos.html" class="dropdown-item">
+                                        <i class="bi bi-pc-display mi-custom-color-verde"></i>
+                                        Computadores
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="mx-3">
+                                    <a href="../html/catalogo-productos.html" class="dropdown-item">
+                                        <i class="bi bi-dpad mi-custom-color-verde"></i>
+                                        Sillas Gamers
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="mx-3">
+                                    <a href="../html/catalogo-productos.html" class="dropdown-item">
+                                        <i class="bi bi-mouse3-fill mi-custom-color-verde"></i>
+                                        Mouse
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="mx-3">
+                                    <a href="../html/catalogo-productos.html" class="dropdown-item">
+                                        <i class="bi bi-mouse3 mi-custom-color-verde"></i>
+                                        Mousepads
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="mx-3">
+                                    <a href="../html/catalogo-productos.html" class="dropdown-item">
+                                        Poleras y Polerones
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link text-white" href="../html/contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link text-white" href="../html/blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link text-white" href="#">
+                                Comunidad
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--Barra de Búsqueda Global-->
+                    <form class="d-flex mx-auto" role="search" style="max-width: 400px;">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Buscar productos..." aria-label="Search" id="searchInput">
+                            <button class="btn btn-outline-light" type="submit" id="searchButton">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!--Usuario-->
+                    <ul class="navbar-nav ms-auto text-white">
+                        <li class="nav-item me-3">
+                            <a href="../html/carrito.html" class="btn btn-primary" role="button">
+                                <i class="bi bi-cart4"></i>
+                                Carrito de Compras
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i>
+                                David
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                                <li>
+                                    <a href="../html/configuracion-mi-perfil.html" class="dropdown-item">
+                                        <i class="bi bi-person-fill"></i>
+                                        Configuración
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="../html/iniciar-sesion.html" class="dropdown-item">
+                                        <i class="bi bi-box-arrow-right"></i>
+                                        Cerrar Sesión
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Sección Banner-->
+    <section class="w-100 seccion-top-detalles roboto-mi-fuente">
+        <div class="container h-100 d-flex align-items-center justify-content-center" style="min-height: 220px;">
+            <div>
+                <h1 class="orbitron-mi-fuente display-4 fw-bold text-white text-center text-shadow" style="text-shadow: 2px 2px 8px #000;">
+                    Blog
+                </h1>
+                <p class="lead text-center text-white-50">
+                    Noticias, tendencias y artículos sobre el mundo gamer
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Contenido Principal del Blog-->
+    <div class="container my-5">
+        <!--Artículos Recientes-->
+        <section>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="orbitron-mi-fuente text-center">
+                        <i class="bi bi-clock-history text-info me-2"></i>Artículos Recientes
+                    </h2>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!--Artículo 1-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-3 border-primary h-100">
+                        <img src="../assets/imgs/blog/erik-mclean-JHKrEcjXSi8-unsplash.jpg" class="card-img-top" alt="Tendencias Gaming 2025" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-primary mb-2 align-self-start">
+                                <i class="bi bi-calendar3"></i> 10 Septiembre 2025
+                            </span>
+                            <h5 class="card-title orbitron-mi-fuente">
+                                <a href="../html/blog/tendencias-gaming-2025.html" class="text-white text-decoration-none">
+                                    Las 7 Tendencias Gaming que Dominarán el 2025
+                                </a>
+                            </h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                Desde la realidad virtual hasta los nuevos procesadores, conoce qué tecnologías cambiarán la forma de jugar este año.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="../html/blog/tendencias-gaming-2025.html" class="btn btn-outline-success btn-sm">
+                                    <i class="bi bi-book-open"></i> Leer Más
+                                </a>
+                                <small class="text-muted float-end mt-2">
+                                    <i class="bi bi-eye"></i> 1.8K vistas
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Artículo 2-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-3 border-primary h-100">
+                        <img src="../assets/imgs/blog/denise-jans-uIemlFWQSC4-unsplash.jpg" class="card-img-top" alt="Setup Gaming 2025" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-warning text-dark mb-2 align-self-start">
+                                <i class="bi bi-calendar3"></i> 8 Septiembre 2025
+                            </span>
+                            <h5 class="card-title orbitron-mi-fuente">
+                                <a href="../html/blog/setup-gaming-perfecto.html" class="text-white text-decoration-none">
+                                    Cómo Crear el Setup Gaming Perfecto en 2025
+                                </a>
+                            </h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                Guía completa para armar tu estación de juego ideal con los mejores componentes y periféricos del mercado.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="../html/blog/setup-gaming-perfecto.html" class="btn btn-outline-success btn-sm">
+                                    <i class="bi bi-book-open"></i> Leer Más
+                                </a>
+                                <small class="text-muted float-end mt-2">
+                                    <i class="bi bi-eye"></i> 3.2K vistas
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Artículo 3-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-3 border-primary h-100">
+                        <img src="../assets/imgs/blog/karthik-balakrishnan-NrS53eUKgiE-unsplash.jpg" class="card-img-top" alt="Mejores Juegos de Mesa" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-info mb-2 align-self-start">
+                                <i class="bi bi-calendar3"></i> 5 Septiembre 2025
+                            </span>
+                            <h5 class="card-title orbitron-mi-fuente">
+                                <a href="#" class="text-white text-decoration-none">
+                                    Top 10: Mejores Juegos de Mesa
+                                </a>
+                            </h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                Una selección de los juegos de mesa más emocionantes que todo gamer debería tener en su colección.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-outline-success btn-sm">
+                                    <i class="bi bi-book-open"></i> Leer Más
+                                </a>
+                                <small class="text-muted float-end mt-2">
+                                    <i class="bi bi-eye"></i> 1.5K vistas
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Artículo 4-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-3 border-primary h-100">
+                        <img src="../assets/imgs/blog/oliver-beer-ABbtsOGAmZ4-unsplash.jpg" class="card-img-top" alt="Cuidado del Hardware" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger mb-2 align-self-start">
+                                <i class="bi bi-calendar3"></i> 2 Septiembre 2025
+                            </span>
+                            <h5 class="card-title orbitron-mi-fuente">
+                                <a href="#" class="text-white text-decoration-none">
+                                    Guía: Mantén tu Hardware Como Nuevo
+                                </a>
+                            </h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                Tips esenciales para el mantenimiento y cuidado de tu PC gaming, consolas y periféricos.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-outline-success btn-sm">
+                                    <i class="bi bi-book-open"></i> Leer Más
+                                </a>
+                                <small class="text-muted float-end mt-2">
+                                    <i class="bi bi-eye"></i> 2.1K vistas
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Artículo 5-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-3 border-primary h-100">
+                        <img src="../assets/imgs/blog/florian-olivo-Mf23RF8xArY-unsplash.jpg" class="card-img-top" alt="Esports en Chile" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-secondary mb-2 align-self-start">
+                                <i class="bi bi-calendar3"></i> 30 Agosto 2025
+                            </span>
+                            <h5 class="card-title orbitron-mi-fuente">
+                                <a href="#" class="text-white text-decoration-none">
+                                    El Crecimiento de los Esports en Chile
+                                </a>
+                            </h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                Un análisis del panorama competitivo nacional y las oportunidades para nuevos talentos.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-outline-success btn-sm">
+                                    <i class="bi bi-book-open"></i> Leer Más
+                                </a>
+                                <small class="text-muted float-end mt-2">
+                                    <i class="bi bi-eye"></i> 990 vistas
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Artículo 6-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-3 border-primary h-100">
+                        <img src="../assets/imgs/blog/jeshoots-com-eCktzGjC-iU-unsplash.jpg" class="card-img-top" alt="Curiosidades Gaming" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-light text-dark mb-2 align-self-start">
+                                <i class="bi bi-calendar3"></i> 28 Agosto 2025
+                            </span>
+                            <h5 class="card-title orbitron-mi-fuente">
+                                <a href="#" class="text-white text-decoration-none">
+                                    10 Curiosidades Gaming que No Conocías
+                                </a>
+                            </h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                Datos sorprendentes y secretos de la industria gaming que te dejarán con la boca abierta.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-outline-success btn-sm">
+                                    <i class="bi bi-book-open"></i> Leer Más
+                                </a>
+                                <small class="text-muted float-end mt-2">
+                                    <i class="bi bi-eye"></i> 1.3K vistas
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+  <!--Footer-->
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5 border-top border-secondary roboto-mi-fuente">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          
+          <!--Columna 1: Logo + Redes Sociales-->
+          <div class="col-md-4 mb-4">
+            <h4 class="mb-3">
+              <i class="bi bi-controller"></i> LEVEL-UP GAMER
+            </h4>
+            <div>
+              <a href="https://facebook.com" target="_blank" class="text-white me-3 fs-4">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="text-white me-3 fs-4">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="text-white me-3 fs-4">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://tiktok.com" target="_blank" class="text-white fs-4">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--Columna 2: Enlaces Rápidos-->
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Enlaces Rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a href="../html/index-lvlup.html" class="text-white text-decoration-none">Inicio</a></li>
+              <li><a href="../html/catalogo-productos.html" class="text-white text-decoration-none">Categorías de Productos</a></li>
+              <li><a href="../html/contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+              <li><a href="../html/blog.html" class="text-white text-decoration-none">Blog</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Comunidad</a></li>
+              <li><a href="../html/nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+            </ul>
+          </div>
+
+          <!--Columna 3: Imagen-->
+          <div class="col-md-4 mb-4 text-center">
+            <h5 class="mb-3">Medios de Pago</h5>
+            <img src="../assets/imgs/401x117.jpg" alt="Medios de Pago" class="img-fluid rounded">
+          </div>
+        </div>
+
+        <!--Copyright-->
+        <div class="text-center mt-4">
+          <p class="mb-0">&copy; 2025 LEVEL-UP GAMER. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<../html>
